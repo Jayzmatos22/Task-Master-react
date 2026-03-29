@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+.tasks-container {
+  background: linear-gradient(
+    rgba(241, 246, 240, 0.872),
+    rgba(231, 243, 224, 0.85)
+  );
+
+  border: 3px solid rgb(0, 253, 122);
+  padding: 26px;
+}
+
+
+.taskTitle{
+    background-color: rgb(3, 14, 135);
+    transition: transform 0.3s ease-in-out;
+}
+
+.taskTitle:hover{
+    transition: transform 0.3s ease-in-out;
+    transform: translate3D(4px, -8px, 20px);
+    background-color: rgb(51, 3, 135);
+}
+
+.inputTask{
+    font-family: 'Times New Roman', Times, serif;
+}
+.inputTask:hover{
+    background-color: rgb(43, 40, 82);
+} 
+
+.cointainer-modal{
+    transition: tranform 1s ease-in-out;
+    filter: drop-shadow(20px 20px 100px rgba(192, 238, 8, 0.484));
+    
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px; 
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #1e293b; 
+  border-radius: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #0436ff; 
+  border-radius: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #00fef1; 
+}
+
