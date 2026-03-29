@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+.appTitle{
+    background: linear-gradient(to right, #ab8bf6, #9cfbe0, #9ef1e8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    transition: 0.5s ease-in-out;
+    perspective: 1000px;
+}
+
+.appTitle:hover{
+    filter: drop-shadow(200px 20px 2px rgba(45, 79, 233, 0.294));
+    transform: translate3D(0, -10px, 50px);
+}
+
+.edgeTitle{
+    background: linear-gradient(to right, #a7f58d, #b3f4cb86, #8ce879bf, #adff159f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    font-size: 30px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    transition: transform 0.4s ease-in-out;
+    padding: 1%;
+    
+}
+
+.topDiv:has(.edgeTitle:hover) {
+  background-color: #0f1b1aa2; /* Coloque a cor nova que você quer aqui! */
+}
+
+.edgeTitle:hover{
+    transform: translateX(20px);
+    filter: drop-shadow(200px 2px 2px rgba(239, 241, 250, 0.652));
+    transition: transform 0.6s ease-in-out;
+    background: linear-gradient(to right, #e4eee1, #aa9ded86, #bfddfebf, #f6e3f49f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    
+}
+
+.topDiv {
+  background-color: #01110f57;
+  width: fit-content; 
+}
+
+
+
+.topMenu ul{
+    background-color: #04182074;
+    perspective: 1000px;
+}
+
+.topMenu ul:hover{
+    background-color: #01121896;
+    transition: transform 0.4 ease-in-out;
+    background-color: #031c22e9;
+}
+
+.topMenu li:hover{
+    transform: translate3d(2px, 4px, 20px);
+    color: #272fa0fd;
+    background-color: #02052495;
+    border-radius: 25%;
+    cursor: pointer;
+}
+
+.addIcon{
+    color: #a7f58d;
+    transition: 0.4s ease-in-out;
+    perspective: 1000px;
+}
+
+.addIcon:hover{
+    filter: drop-shadow(-40px 0px 5px rgb(95, 116, 1));
+    transform: translate3D(0px, 8px, 0px);
+}
+
+.taskIcon{
+    color: #04b12c;
+}
+.taskIcon:hover{
+    transition: 0.4s ease-in-out;
+    transform: translate3D(0px, 4px, 0px);
+    color: rgb(0, 238, 255);
+}
+
